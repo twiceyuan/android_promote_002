@@ -11,3 +11,10 @@
 + 布局(用户登录的列子)
   - linearLayout  
   - RelativeLayout  
++ 分析Settings源代码  
++ 动手实践一个静音的小模块  
++ 调试代码。Logcat配合Log.i,e,d,v  
++ 数据存储  
+    - 文件(权限问题)sharedPreference,sdcard  
+    - 数据库  
+
