@@ -14,15 +14,15 @@ public class LoginService {
 	
 	
 	/**
-	 * ±£´æÓÃ»§ĞÅÏ¢£¬Íê³É¼Ç×¡ÃÜÂë¹¦ÄÜ
-	 * @param username ÓÃ»§Ãû
-	 * @param password ÃÜÂë
+	 * ä¿å­˜ç”¨æˆ·ä¿¡æ¯ï¼Œå®Œæˆè®°ä½å¯†ç åŠŸèƒ½
+	 * @param username ç”¨æˆ·å
+	 * @param password å¯†ç 
 	 * @return
 	 */
 	public static boolean saveUser(Context context,String username,String password){
 		
 		
-		//µÚÒ»ÖÖ·½Ê½
+		//ç¬¬ä¸€ç§æ–¹å¼
 		/*//File file = new File("/data/data/com.tcxy.dial/user.txt");
 		
 		File file = new File(context.getFilesDir(),"user.txt");
@@ -42,7 +42,7 @@ public class LoginService {
 		return true;*/
 		
 		
-		//µÚ¶şÖÖ·½Ê½
+		//ç¬¬äºŒç§æ–¹å¼
 		/*String txt  = username+"%%"+password+"##";
 		try {
 			OutputStream out = context.openFileOutput("user2.txt",Context.MODE_PRIVATE);
@@ -53,9 +53,9 @@ public class LoginService {
 		}
 		return true;*/
 		
-		//µÚÈıÖÖ·½Ê½
+		//ç¬¬ä¸‰ç§æ–¹å¼
 		
-		SharedPreferences sp = context.getSharedPreferences("user.txt", Context.MODE_PRIVATE);
+		SharedPreferences sp = context.getSharedPreferences("user", Context.MODE_PRIVATE);
 		
 		Editor editor = sp.edit();
 		
@@ -69,7 +69,7 @@ public class LoginService {
 	
 	
 	/**
-	 * È¡µÃ¼ÇÂ¼µÄÃÜÂë
+	 * å–å¾—è®°å½•çš„å¯†ç 
 	 * 
 	 * @return
 	 */
